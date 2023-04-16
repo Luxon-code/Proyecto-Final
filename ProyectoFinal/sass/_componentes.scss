@@ -9,7 +9,7 @@
 }
 
 $color-main: #0075ff;
-
+$color-footer: #F4F7FE;
 .btn-main {
     background-color: $color-main;
     color: white;
@@ -69,12 +69,12 @@ $color-main: #0075ff;
         font-size: 1.25rem;
     }
 }
-.feature{
+.benefit{
     display: flex;
     flex-direction: column;
     .icon{
         color: $color-main;
-        font-size: 10rem;
+        font-size: 7.5rem;
         text-align: center;
     }
     .description{

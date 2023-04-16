@@ -33,6 +33,14 @@
             width: 20rem;
             font-size: 3rem;
         }
+        .home-description{
+            width: 300px;
+        }
+        .lead-magnet{
+            .input-col{
+                max-width: 200px;
+            }
+        }
     }
 }
 .features{
@@ -76,6 +84,105 @@
         .img{
             img{
                 max-width: 20rem;
+            }
+        }
+    }
+}
+.benefits{
+    border-top: 1px solid #ccc;
+    .intro{
+        @extend .features, .intro;
+    }
+    .benefits-cards{
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+.kpis{
+    background-color: componentes.$color-main;
+    color: white;
+    padding: 4rem;
+    width: 100%;
+    .kpi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .desc{
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+}
+.onboarding{
+    .intro{
+        @extend .features, .intro;
+    }
+    .steps{
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator{
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+.footer-cta{
+    background-color: componentes.$color-footer;
+    padding: 5rem;
+    background-image: url(../assets/img/bg\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    background-size: 30rem;
+    .sub-footer-cta{
+        width: 50%;
+        .cta-title{
+            font-size: 2rem;
+        }
+        .cta-desc{
+            font-size: 1.1rem;
+            color: rgba(0, 0, 0, 0.4);
+            font-weight: 500;
+        }
+    }
+}
+@media(max-width: 768px){
+    .onboarding{
+        .steps{
+            flex-direction: column;
+            .icon-desc{
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .footer-cta{
+        background-image: none;
+        .sub-footer-cta{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .benefits{
+        .intro{
+            text-align: center;
+            h3{
+                font-size: 1.9rem;
+            }
+        }
+    }
+    .onboarding{
+        .intro{
+            text-align: center;
+            h3{
+                font-size: 1.9rem;
             }
         }
     }

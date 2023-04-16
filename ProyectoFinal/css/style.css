@@ -54,25 +54,25 @@
   font-size: 1.25rem;
 }
 
-.feature {
+.benefit {
   display: flex;
   flex-direction: column;
 }
-.feature .icon {
+.benefit .icon {
   color: #0075ff;
-  font-size: 10rem;
+  font-size: 7.5rem;
   text-align: center;
 }
-.feature .description .title {
+.benefit .description .title {
   font-size: 2rem;
   text-align: center;
 }
-.feature .description .text {
+.benefit .description .text {
   color: #888;
   font-weight: 600;
   text-align: center;
 }
-.feature .cta {
+.benefit .cta {
   color: #0075ff;
   font-weight: 600;
   margin-top: 6rem;
@@ -132,8 +132,14 @@
   width: 20rem;
   font-size: 3rem;
 }
+.home .home-cta .home-description {
+  width: 300px;
+}
+.home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
+}
 
-.features {
+.features, .onboarding .intro, .benefits .intro {
   width: 100%;
   padding: 3rem;
   max-width: 992px;
@@ -142,42 +148,130 @@
   flex-direction: column;
   align-items: center;
 }
-.features .intro {
+.features .intro, .onboarding .intro .intro, .benefits .intro .intro {
   text-align: center;
 }
-.features .intro h3 {
+.features .intro h3, .onboarding .intro .intro h3, .benefits .intro .intro h3 {
   font-size: 1.9rem;
 }
-.features .intro p {
+.features .intro p, .onboarding .intro .intro p, .benefits .intro .intro p {
   font-size: 0.9rem;
   color: #888;
 }
-.features .sub-features {
+.features .sub-features, .onboarding .intro .sub-features, .benefits .intro .sub-features {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.features .sub-features .text {
+.features .sub-features .text, .onboarding .intro .sub-features .text, .benefits .intro .sub-features .text {
   padding: 2rem 0;
   flex: 1;
 }
-.features .sub-features .text .feature {
+.features .sub-features .text .feature, .onboarding .intro .sub-features .text .feature, .benefits .intro .sub-features .text .feature {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.features .sub-features .text .feature .description {
+.features .sub-features .text .feature .description, .onboarding .intro .sub-features .text .feature .description, .benefits .intro .sub-features .text .feature .description {
   margin-left: 1rem;
   max-width: 20rem;
 }
-.features .sub-features .text .feature .description .description-title {
+.features .sub-features .text .feature .description .description-title, .onboarding .intro .sub-features .text .feature .description .description-title, .benefits .intro .sub-features .text .feature .description .description-title {
   font-size: 1.25rem;
 }
-.features .sub-features .text .feature .description .description-text {
+.features .sub-features .text .feature .description .description-text, .onboarding .intro .sub-features .text .feature .description .description-text, .benefits .intro .sub-features .text .feature .description .description-text {
   font-size: 1rem;
 }
-.features .sub-features .img img {
+.features .sub-features .img img, .onboarding .intro .sub-features .img img, .benefits .intro .sub-features .img img {
   max-width: 20rem;
+}
+
+.benefits {
+  border-top: 1px solid #ccc;
+}
+.benefits .benefits-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.kpis {
+  background-color: #0075ff;
+  color: white;
+  padding: 4rem;
+  width: 100%;
+}
+.kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kpis .kpi .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.kpis .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.onboarding .steps {
+  padding: 0 7rem 5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onboarding .steps .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
+
+.footer-cta {
+  background-color: #F4F7FE;
+  padding: 5rem;
+  background-image: url(../assets/img/bg\ 1.png);
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  background-size: 30rem;
+}
+.footer-cta .sub-footer-cta {
+  width: 50%;
+}
+.footer-cta .sub-footer-cta .cta-title {
+  font-size: 2rem;
+}
+.footer-cta .sub-footer-cta .cta-desc {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .onboarding .steps {
+    flex-direction: column;
+  }
+  .onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .footer-cta {
+    background-image: none;
+  }
+  .footer-cta .sub-footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+  .benefits .intro {
+    text-align: center;
+  }
+  .benefits .intro h3 {
+    font-size: 1.9rem;
+  }
+  .onboarding .intro {
+    text-align: center;
+  }
+  .onboarding .intro h3 {
+    font-size: 1.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
